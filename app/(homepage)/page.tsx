@@ -6,21 +6,45 @@ import { buttonVariants } from "@/components/ui/button";
 
 import { ProductCardAplha } from "@/components/product-card";
 import { ServiceCardAlpha } from "@/components/service-card";
+import { ClientCardAlpha } from "@/components/client-card";
+import HeroBackground from "@/components/hero-background";
 
 const Homepage = () => {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 pb-16">
+      <section className="px-6 max-md:pt-28 max-md:pb-16 bg-[url(/bg-1.png)] bg-contain bg-right-top bg-no-repeat border">
+        {/* <HeroBackground /> */}
         <div className="container md:min-h-screen flex flex-col justify-center">
-          <div className="md:w-1/2 space-y-4">
-            <h1 className="text-[#346BB3] text-xl md:text-2xl font-medium">
-              INTERNET OF THINGS SOLUTION
+          <div className="md:w-1/2 max-sm:pt-60">
+            <h1 className="text-[#346BB3] md:text-xl font-medium">
+              Internet of Things Solutions
             </h1>
-            <h2 className="font-bold font-display text-slate-800 md:text-5xl text-4xl">
+            <h2 className="font-bold mt-4 font-display text-slate-800 text-4xl md:text-6xl">
               We provide an effective and efficient solution to help our
               partners & clients
             </h2>
+            <div className="flex gap-4 mt-10">
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({ variant: "gradient", className: "w-max" })
+                )}
+              >
+                How its Work?
+              </Link>
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                    className: "rounded-full underline",
+                  })
+                )}
+              >
+                Read the full story line
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -124,7 +148,7 @@ const Homepage = () => {
                 href="/"
                 className={cn(
                   buttonVariants({
-                    variant: "default",
+                    variant: "gradient",
                     size: "lg",
                     className: "px-6 rounded-full",
                   })
@@ -159,7 +183,7 @@ const Homepage = () => {
                 href="/"
                 className={cn(
                   buttonVariants({
-                    variant: "default",
+                    variant: "gradient",
                     size: "lg",
                     className: "px-6 rounded-full",
                   })
@@ -184,7 +208,7 @@ const Homepage = () => {
             </div>
 
             {/* # */}
-            <div className="w-full"></div>
+            <ClientCardAlpha />
 
             {/* # */}
             <div className="flex justify-center">
@@ -192,7 +216,7 @@ const Homepage = () => {
                 href="/"
                 className={cn(
                   buttonVariants({
-                    variant: "default",
+                    variant: "gradient",
                     size: "lg",
                     className: "px-6 rounded-full",
                   })

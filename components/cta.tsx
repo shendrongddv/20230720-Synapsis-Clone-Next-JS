@@ -12,7 +12,7 @@ export const CTAFooter = () => {
         <div className="rounded-3xl md:rounded-3xl bg-white drop-shadow-2xl md:p-20 px-4 py-10 flex flex-col md:flex-row md:justify-between md:items-center gap-12 items-center">
           {/* Col */}
           <div className="flex flex-col max-md:text-center space-y-4">
-            <h2 className="font-bold text-3xl font-display md:text-4xl text-slate-800">
+            <h2 className="h2 text-slate-800">
               Let&apos;s start monitoring your devices.
             </h2>
             <p>With CONNEX, We are here to solve your problems.</p>
@@ -23,9 +23,8 @@ export const CTAFooter = () => {
             href="/"
             className={cn(
               buttonVariants({
-                variant: "default",
-                className:
-                  "rounded-full px-6 font-semibold bg-gradient-to-tr from-sky-800 via-sky-600 to-sky-300",
+                variant: "gradient",
+                className: "px-6 py-6",
               })
             )}
           >
