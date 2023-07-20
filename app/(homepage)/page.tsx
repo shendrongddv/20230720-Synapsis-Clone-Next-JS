@@ -8,12 +8,13 @@ import { ProductCardAplha } from "@/components/product-card";
 import { ServiceCardAlpha } from "@/components/service-card";
 import { ClientCardAlpha } from "@/components/client-card";
 import HeroBackground from "@/components/hero-background";
+import ProjectSlider from "@/components/project-slider";
 
 const Homepage = () => {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 max-md:pt-28 max-md:pb-16 bg-[url(/bg-1.png)] bg-contain bg-right-top bg-no-repeat border">
+      <section className="px-6 max-md:pt-28 max-md:pb-16 bg-[url(/bg-1.png)] bg-contain bg-right-top bg-no-repeat">
         {/* <HeroBackground /> */}
         <div className="container md:min-h-screen flex flex-col justify-center">
           <div className="md:w-1/2 max-sm:pt-60">
@@ -24,11 +25,15 @@ const Homepage = () => {
               We provide an effective and efficient solution to help our
               partners & clients
             </h2>
-            <div className="flex gap-4 mt-10">
+            <div className="flex gap-1 mt-10">
               <Link
                 href="/"
                 className={cn(
-                  buttonVariants({ variant: "gradient", className: "w-max" })
+                  buttonVariants({
+                    variant: "gradient",
+                    size: "lg",
+                    className: "px-6 rounded-full",
+                  })
                 )}
               >
                 How its Work?
@@ -38,7 +43,9 @@ const Homepage = () => {
                 className={cn(
                   buttonVariants({
                     variant: "ghost",
-                    className: "rounded-full underline",
+                    size: "lg",
+                    className:
+                      "rounded-full underline text-primary-foreground font-semibold",
                   })
                 )}
               >
@@ -51,12 +58,12 @@ const Homepage = () => {
       {/* ./ Hero */}
 
       {/* Services */}
-      <section className="px-4 py-16">
+      <section className="px-4 py-16 bg-gradient-to-b from-transparent from-60% to-60% to-slate-50">
         <div className="container">
           <div className="flex flex-col md:flex-row md:justify-between gap-4">
             {/* Col */}
             <div className="sm:w-1/2 md:w-1/4 max-md:text-center">
-              <div className="rounded-xl p-6 md:p-8 h-full flex flex-col bg-gradient-to-br from-sky-800 via-sky-600 to-sky-300">
+              <div className="rounded-xl p-6 md:p-8 h-full flex flex-col bg-gradient-to-br from-primary-foreground to-secondary-foreground">
                 <span className="subheading text-white">Our Services</span>
                 <h2 className="h2 mt-3 text-white">
                   We Will Help Your Business Growing
@@ -163,11 +170,14 @@ const Homepage = () => {
       {/* ./ Products */}
 
       {/* Projects */}
-      <section id="projects" className="px-4 py-16 bg-slate-50">
+      <section
+        id="projects"
+        className="md:px-4 py-16 bg-gradient-to-b from-slate-50 from-60% to-60% to-transparent"
+      >
         <div className="container">
           <div className="flex flex-col gap-12">
             {/* # */}
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center max-md:px-4">
               <span className="subheading text-[#346BB3]">Our Projects</span>
               <h2 className="h2 mt-3 text-slate-800">
                 Projects We&apos;ve Done
@@ -175,7 +185,9 @@ const Homepage = () => {
             </div>
 
             {/* # */}
-            <div className="w-full"></div>
+            <div className="w-full">
+              <ProjectSlider />
+            </div>
 
             {/* # */}
             <div className="flex justify-center">

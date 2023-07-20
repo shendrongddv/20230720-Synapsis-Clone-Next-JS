@@ -7,9 +7,9 @@ import { CalendarRange } from "lucide-react";
 
 export const CTAFooter = () => {
   return (
-    <div className="px-6 py-28 bg-gradient-to-b from-transparent to-[#ECF8FD]">
+    <div className="px-4 pb-16 bg-gradient-to-b from-transparent from-40% to-40% to-slate-100">
       <div className="container">
-        <div className="rounded-3xl md:rounded-3xl bg-white drop-shadow-2xl md:p-20 px-4 py-10 flex flex-col md:flex-row md:justify-between md:items-center gap-12 items-center">
+        <div className="rounded-3xl md:rounded-3xl bg-white drop-shadow-2xl md:p-20 px-6 py-12 flex flex-col md:flex-row md:justify-between md:items-center gap-12 items-center">
           {/* Col */}
           <div className="flex flex-col max-md:text-center space-y-4">
             <h2 className="h2 text-slate-800">
@@ -24,7 +24,8 @@ export const CTAFooter = () => {
             className={cn(
               buttonVariants({
                 variant: "gradient",
-                className: "px-6 py-6",
+                size: "lg",
+                className: "px-6 rounded-full",
               })
             )}
           >

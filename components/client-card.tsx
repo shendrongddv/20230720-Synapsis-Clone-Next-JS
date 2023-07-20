@@ -113,11 +113,11 @@ export const ClientCardAlpha = () => {
           className="flex opacity-75 transition duration-200 ease-linear hover:opacity-100 group justify-center items-center p-2 sm:p-4 scale-100"
         >
           <Image
-            src={`/${item.img}`}
+            src={`/clients/${item.img}`}
             alt={item.title}
             width={128}
             height={128}
-            className="h-14 transition duration-200 ease-linear sm:h-24 md:h-24 w-auto group-hover:scale-95"
+            className="h-14 transition duration-200 ease-linear sm:h-24 md:h-24 w-auto grayscale group-hover:grayscale-0 group-hover:scale-95"
           />
         </div>
       ))}
