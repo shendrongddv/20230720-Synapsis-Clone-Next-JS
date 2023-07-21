@@ -14,7 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const menus = [
+export const menus = [
   {
     id: 1,
     label: "Home",

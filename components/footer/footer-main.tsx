@@ -140,7 +140,6 @@ const FooterMain = () => {
             Copyright © 2023 <Link href="/">PT. Synapsis Sinergi Digital</Link>
             . All Rights Reserved
           </span>
-          <span className="text-sm text-white/90">Lorem</span>
         </div>
       </div>
     </footer>
