@@ -1,3 +1,4 @@
+import { CTAFooter } from "@/components/cta";
 import FooterMain from "@/components/footer/footer-main";
 import NavbarMain from "@/components/navbar/navbar-main";
 
@@ -10,6 +11,7 @@ export default function PagesLayout({ children }: PagesLayoutProps) {
     <>
       <NavbarMain />
       <main>{children}</main>
+      <CTAFooter />
       <FooterMain />
     </>
   );
