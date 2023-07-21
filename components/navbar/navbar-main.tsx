@@ -3,6 +3,7 @@ import NavbarBrand from "./navbar-brand";
 import { ToggleMobile } from "./toggle-mobile";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
+import { NavbarList } from "./navbar-list";
 
 const NavbarMain = () => {
   return (
@@ -13,6 +14,9 @@ const NavbarMain = () => {
           <NavbarBrand />
 
           {/* NAV */}
+          <div className="hidden md:flex">
+            <NavbarList />
+          </div>
 
           {/* Button */}
           <div className="hidden md:flex">
